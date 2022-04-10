@@ -21,8 +21,8 @@ fetch("https://modokz.github.io/data.json")
       const card = schoolCardTemplate.content.cloneNode(true).children[0]
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
-      header.textContent = school.day + " октября, поток " + school.number_of_flow
-      body.textContent = school.school_name + ", БИН " + school.bin + ", " + school.region + ", " + school.district + ", учащихся в потоке: " + school.students_in_flow
+	  header.textContent = `${school.day} октября, поток ${school.number_of_flow}`
+	  body.textContent = `${school.school_name}, БИН ${school.bin}, ${school.region}, ${school.district}, учащихся в потоке: ${school.students_in_flow}`
       schoolCardContainer.append(card)
       return { day: school.day, school_name: school.school_name, number_of_flow: school.number_of_flow, bin: school.bin, region: school.region, district: school.district, students_in_flow: school.students_in_flow, element: card }
     })
