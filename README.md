@@ -1,2 +1,2 @@
 # modokz.github.io
-email для технических вопросов: modokz@mail.ru
+email для технических вопросов: <modokz@mail.ru>
