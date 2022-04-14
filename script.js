@@ -45,7 +45,7 @@ fetch("https://modokz.github.io/data.json")
       const body = card.querySelector("[data-body]")
       header.textContent = `${school.day} апреля`
       flow.textContent = `поток ${school.number_of_flow}, ${school.students_in_flow} уч.`
-      body.textContent = `${school.school_name}, БИН ${school.bin}, ${school.region}, ${school.district}`
+      body.textContent = `${school.school_name}, БИН ${school.bin}, ${school.region}, ${school.district}, ${school.locality}`
       schoolCardContainer.append(card)
       return {
         school_name: school.school_name,
